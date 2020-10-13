@@ -22,7 +22,7 @@ def count_pageviews(list):
 
     count_pageview = sum([int(i) if type(i) == type(str()) else 0 for i in count_pageviews['pageviews']])
 
-    print('Contagem de Pageviews: ', count_pageview)
+    print('\n Contagem de Pageviews: ', count_pageview)
 
 
 def number_sessions_by_user(list):
@@ -43,7 +43,7 @@ def number_sessions_by_user(list):
         else:
             session_per_users_dict[name] = session_per_users_dict[name] + 1
 
-    print('Sessões por usuário:')
+    print('\n Sessões por usuário:')
 
     for key, value in sorted(session_per_users_dict.items(), key=lambda x: x[0]):
         print('{} fullVisitorId | {} visitId com {} sessão(ões)'.format(key[0], key[1], value))
@@ -68,7 +68,7 @@ def sessions_per_date(list):
 
         sessions_per_date_dict.update({date: sessions})
 
-    print('Sessões distintas por data:')
+    print('\n Sessões distintas por data:')
 
     for key, value in sessions_per_date_dict.items():
         print('Data: {} recebeu: {} sessão(ões) distinta(s)'.format(key, value))
@@ -93,7 +93,7 @@ def avg_sessions_per_date(list):
 
         sessions_per_date_dict.update({date: avg_session})
 
-    print('Média de duração da sessão por data:')
+    print('\n Média de duração da sessão por data:')
 
     for key, value in sessions_per_date_dict.items():
         print('Data: {} média {} segundos'.format(key,  round(value, 2)))
@@ -127,7 +127,8 @@ def sessions_per_browser(list):
 
         sessions_per_device_date_dict.update({(date,name[0]): sessions})
 
-
+    print('\n Sessões diárias por tipo de browser:')
+    
     for key, value in sorted(sessions_per_device_date_dict.items(), key=lambda x: datetime.strptime(x[0][0], '%d/%m/%Y')):
         print('data-browser: {} com {} sesssão(ões)'.format(key, value))
 
