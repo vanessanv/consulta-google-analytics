@@ -26,6 +26,7 @@ Nesse projeto foi utilizada a linguagem Python com auxilio do framework Panda.
   git clone 'path'
 - Executar o comando:
   python main.py
+- O resultado será apresentado no console
 ---------------------
 ## Informações adicionais:
 
