@@ -25,7 +25,7 @@ Nesse projeto foi utilizada a linguagem Python com auxilio do framework Panda.
 - Baixar os fontes via git:
   git clone 'path'
 - Executar o comando:
-
+  python main.py
 ---------------------
 ## Informações adicionais:
 
