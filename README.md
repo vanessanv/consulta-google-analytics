@@ -26,6 +26,7 @@ Nesse projeto foi utilizada a linguagem Python com auxilio do framework Panda.
   git clone 'path'
 - Executar o comando:
 
+---------------------
 ## Informações adicionais:
 
 Neste repositório também é possível encontrar o MER (modelo entidade relacionamento) do Google Analytics
